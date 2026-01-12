@@ -1,7 +1,14 @@
 from unittest.mock import patch
 
-from src.utils import (currency, reading_operations_xlsx, separation_of_expenses, separation_of_receipts,
-                       sorted_category_expenses, sorted_receipts, stock_prices)
+from src.utils import (
+    currency,
+    reading_operations_xlsx,
+    separation_of_expenses,
+    separation_of_receipts,
+    sorted_category_expenses,
+    sorted_receipts,
+    stock_prices,
+)
 
 
 @patch("requests.get")

@@ -5,8 +5,15 @@ from datetime import datetime
 
 import pandas as pd
 
-from src.utils import (currency, reading_operations_xlsx, separation_of_expenses, separation_of_receipts,
-                       sorted_category_expenses, sorted_receipts, stock_prices)
+from src.utils import (
+    currency,
+    reading_operations_xlsx,
+    separation_of_expenses,
+    separation_of_receipts,
+    sorted_category_expenses,
+    sorted_receipts,
+    stock_prices,
+)
 
 current_dir = os.path.dirname(__file__)
 absolute_path = os.path.join(current_dir, "..")
@@ -86,8 +93,3 @@ def sorting_events(selected_date, start_date=None):
     logger.debug("Получен словарь с операциями в диапазоне дат по категориям")
 
     return transactions_sorted
-
-
-if __name__ == "__main__":
-    i = sorting_events("2020-06-20")
-    print(i)

@@ -166,9 +166,3 @@ def formation_df():
     ]
     df = pd.DataFrame(data, columns=["Дата платежа", "Сумма операции", "Валюта операции", "Категория", "Описание"])
     return df
-
-
-if __name__ == "__main__":
-    i = formation_df()
-    m = sorted_receipts(i)
-    print(m)
